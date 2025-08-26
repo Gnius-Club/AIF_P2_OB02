@@ -1,24 +1,233 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Sesión 2: ¡Detectives de Eventos y Decisiones!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 2: ¡Detectives de Eventos y Decisiones!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender el concepto de <strong>evento</strong> como un "disparador" que inicia una acción.</li>
+                                        <li>Interiorizar la lógica <strong>condicional</strong> ("SI... ENTONCES...") como una regla para tomar decisiones.</li>
+                                        <li>Experimentar cómo un evento puede desencadenar una <strong>secuencia</strong> de acciones.</li>
+                                        <li>Vincular las actividades físicas (unplugged) con los bloques de código específicos en Pictoblox.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡¡Misión de Calentamiento!:</strong> Introducción y Conexión.</li>
+                                        <li><strong class="tactic-highlight">⚡El Juego del Semáforo Lógico:</strong> Lógica Condicional.</li>
+                                        <li><strong class="tactic-highlight">⚡¡La Gran Cadena de Reacciones!:</strong> Eventos en Cascada.</li>
+                                        <li><strong class="tactic-highlight">⚡Conectando el Juego con el Código:</strong> Vistazo a Pictoblox.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Participación activa y demostración de comprensión en los juegos kinestésicos.</li>
+                                        <li>Capacidad para verbalizar una regla simple usando la estructura "Si... entonces...".</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Tarjetas grandes de colores (rojo, verde, azul) o cartulinas.</li>
+                                        <li>Objetos simples para usar como "disparadores" (ej. una campana, un aplaudidor, un sombrero divertido).</li>
+                                        <li>Presentación de diapositivas con imágenes de los bloques de Pictoblox ("Al hacer clic en bandera verde", "si...entonces").</li>
+                                        <li>Espacio en el aula para que los niños puedan moverse y formar un círculo.</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li>Tener las tarjetas de colores y los objetos disparadores listos y a la mano.</li>
+                                        <li>Asegurarse de que el proyector y la presentación de diapositivas funcionen correctamente.</li>
+                                        <li>Liberar un espacio en el centro del aula para que los estudiantes puedan participar en las actividades de movimiento de forma segura.</li>
+                                        <li>Repasar el flujo de los juegos para guiar a los niños con claridad y energía.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: ¡Misión de Calentamiento! ⏰ 5 minutos</h2>
+                <p>Recapitular la sesión anterior y presentar el objetivo de hoy de una manera emocionante: aprender a "pensar como una computadora".</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Conexión y Presentación de la Misión ⏰ 5 minutos</h3>
+                            <p>(Acción): El facilitador saluda al grupo, realiza el ritual Gnius y conecta con la misión anterior. Proyecta una imagen de Tobi, el panda de Pictoblox.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Hola, hola, agentes de IA! ¡Bienvenidos de nuevo a nuestro centro de entrenamiento secreto! ¿Quién recuerda cómo se llama nuestro amigo panda en el laboratorio?... ¡Exacto, Tobi! Y, ¿qué fue lo que logramos que hiciera Tobi en nuestra última misión?... ¡Sí, nos saludó! Ustedes le dieron la instrucción y él obedeció. ¡Eso fue increíble!</p>
+                                <p class="dialogue assistant">Hoy, nuestra misión es un poco diferente y MUY divertida. No vamos a usar las computadoras. ¡Nuestros cuerpos y nuestras mentes serán las computadoras! Hoy vamos a aprender el secreto de cómo piensan las computadoras inteligentes. Ellas no solo siguen órdenes, también ¡toman decisiones! Para el final de la sesión de hoy, cada uno de ustedes podrá decir: <strong>'Yo puedo crear y seguir reglas como una computadora, usando las palabras mágicas SI y ENTONCES'</strong>. ¿Están listos para que nuestro cerebro haga un poco de gimnasia?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: El Juego del Semáforo Lógico ⏰ 15 minutos</h2>
+                <p>Enseñar de manera kinestésica y memorable el concepto fundamental de la lógica condicional ("SI... ENTONCES...").</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: La Regla Maestra ⏰ 5 minutos</h3>
+                            <p>(Acción): Explicar el juego. El facilitador se para al frente con las tarjetas de colores. Todos los estudiantes se ponen de pie.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Muy bien, agentes, vamos a jugar a 'El Semáforo Lógico'. Las computadoras y los robots siempre siguen reglas. Su regla maestra, su secreto más grande, es: 'SI pasa algo, ENTONCES hago algo'. Repitan conmigo: <strong>'SI pasa algo, ENTONCES hago algo'</strong>. ¡Genial! Ahora, nosotros seremos la computadora. Y yo seré quien decida qué pasa.</p>
+                                <p class="dialogue assistant">Aquí tengo tres tarjetas de colores. Cada color es una señal, una condición. La primera regla es simple: <strong>SI</strong> levanto la tarjeta verde, <strong>ENTONCES</strong> ustedes pueden caminar por el salón. Pero, <strong>SI</strong> levanto la tarjeta roja, <strong>ENTONCES</strong> ustedes se congelan como estatuas. ¿Entendida la regla? Vamos a ver... ¡A jugar!</p>
+                                <p class="dialogue assistant">(El facilitador levanta la tarjeta verde, los niños caminan. Levanta la roja, se congelan. Repite varias veces para asentar el concepto).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: ¡Agregando Más Decisiones! ⏰ 10 minutos</h3>
+                            <p>(Acción): Añadir más condiciones y acciones para hacer el juego más dinámico y complejo, utilizando objetos.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Son excelentes computadoras! ¡Siguen las reglas a la perfección! Pero las computadoras inteligentes pueden tomar muchas decisiones al mismo tiempo. Vamos a añadir más reglas a nuestro programa cerebral. Escuchen con atención:</p>
+                                <p class="dialogue assistant">“<strong>SI</strong> levanto la tarjeta azul, <strong>ENTONCES</strong> todos dan tres saltos de conejo."</p>
+                                <p class="dialogue assistant">“<strong>SI</strong> escuchan esta campana (toca la campana), <strong>ENTONCES</strong> todos se sientan en el suelo."</p>
+                                <p class="dialogue assistant">“<strong>SI</strong> me pongo este sombrero divertido (se pone el sombrero), <strong>ENTONCES</strong> todos se ríen a carcajadas."</p>
+                                <p class="dialogue assistant">¿Creen que puedan recordar todas esas reglas? ¡Su cerebro se está volviendo súper poderoso! Vamos a probar esta nueva programación.</p>
+                                <p class="dialogue assistant">(El facilitador mezcla las acciones: levanta la tarjeta verde, luego la azul, se pone el sombrero, levanta la roja, toca la campana. La idea es crear un ambiente divertido y activo donde los niños estén constantemente evaluando las condiciones).</p>
+                                <p class="dialogue assistant">¡Increíble! Miren cuántas decisiones tomaron. Reaccionaron a un color, a un sonido y hasta a algo que me puse. ¡Así es como funciona el cerebro de un robot! Está lleno de reglas 'SI... ENTONCES...' para cada cosa que puede pasar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                 <h2>⚡ Actividad 3: ¡La Gran Cadena de Reacciones! ⏰ 10 minutos</h2>
+                <p>Demostrar cómo un solo "evento" puede iniciar una secuencia de acciones, introduciendo la idea de que los programas son una serie de pasos conectados.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Creando la Cadena ⏰ 10 minutos</h3>
+                            <p>(Acción): Pedir a los estudiantes que se sienten en un gran círculo en el suelo.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Agentes, hicieron un trabajo fantástico tomando decisiones. Ahora vamos a ver cómo una sola acción, un solo <strong>evento</strong>, puede empezar algo mucho más grande, ¡como una fila de fichas de dominó que cae! A esto lo llamamos una 'cadena de reacciones'.</p>
+                                <p class="dialogue assistant">Vamos a crear nuestra propia cadena. Cada uno de ustedes tendrá una regla 'SI... ENTONCES...' secreta. Yo empezaré.</p>
+                                <p class="dialogue assistant">(El facilitador se dirige al primer niño del círculo):</p>
+                                <p class="dialogue assistant">Tu regla es: <strong>SI</strong> yo te toco suavemente el hombro derecho (ese es el evento), <strong>ENTONCES</strong> tú aplaudes una vez.</p>
+                                <p class="dialogue assistant">(Se dirige al segundo niño):</p>
+                                <p class="dialogue assistant">Tu regla es: <strong>SI</strong> escuchas que la persona a tu izquierda aplaude, <strong>ENTONCES</strong> tú te pones de pie.</p>
+                                <p class="dialogue assistant">(Se dirige al tercer niño):</p>
+                                <p class="dialogue assistant">Tu regla es: <strong>SI</strong> ves que la persona a tu izquierda se pone de pie, <strong>ENTONCES</strong> tú maúllas como un gato.</p>
+                                <p class="dialogue assistant">(Continuar con 2-3 reglas más, como "SI escuchas un maullido, ENTONCES tocas el suelo", etc. Hacerlas divertidas y claras).</p>
+                                <p class="dialogue assistant">Muy bien, equipo, ¿todos recuerdan su regla secreta? El programa está cargado en sus cerebros. Yo voy a iniciar el primer evento. No hagan nada hasta que su condición se cumpla. Listos... tres, dos, uno...</p>
+                                <p class="dialogue assistant">(El facilitador toca el hombro del primer niño. Se observa en silencio y con expectación cómo se desencadena toda la secuencia de acciones alrededor del círculo. Se puede repetir una vez más para reforzar).</p>
+                                <p class="dialogue assistant">¡Fantástico! ¿Vieron eso? Yo solo hice UNA cosa: tocar un hombro. Y esa sola acción inició todo un programa. Cada uno de ustedes esperó a que ocurriera su 'evento' para realizar su acción. ¡Así es exactamente como se construyen los programas más complejos y los videojuegos!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Conectando el Juego con el Código ⏰ 10 minutos</h2>
+                <p>Vincular de manera explícita y visual las actividades físicas que acaban de realizar con los bloques de programación que utilizarán en Pictoblox en la próxima sesión.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Del Mundo Real al Laboratorio Digital ⏰ 10 minutos</h3>
+                            <p>(Acción): Los estudiantes regresan a sus lugares. El facilitador proyecta una diapositiva que muestra los bloques de Pictoblox relevantes.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Agentes, ¡misión cumplida! Han aprendido los dos secretos más grandes del pensamiento computacional sin tocar una computadora. Ahora, quiero que vean algo en la pantalla.</p>
+                                <p class="dialogue assistant">(Proyectar el bloque amarillo de evento 'al hacer clic en bandera verde').</p>
+                                <p class="dialogue assistant">¿Recuerdan la campana o cuando yo levantaba una tarjeta? Esos eran <strong>eventos</strong>, la señal para empezar. En Pictoblox, este bloque de la bandera verde es nuestro evento más famoso. Es como decir: <strong>'CUANDO haga clic en la bandera, EMPIEZA el programa'</strong>.</p>
+                                <p class="dialogue assistant">(Proyectar ahora el bloque naranja de control 'si...entonces...').</p>
+                                <p class="dialogue assistant">Y ahora, ¡miren esto! ¿Les parece familiar? ¡Es nuestra regla maestra! Este bloque es el cerebro de nuestros programas. Aquí dentro (señalando el espacio hexagonal) le diremos a la computadora cuál es la condición, por ejemplo: <strong>SI</strong> la cámara ve mi cara... Y aquí dentro (señalando el espacio interior del 'si') le diremos qué hacer, por ejemplo: <strong>ENTONCES</strong> Tobi saluda.</p>
+                                <p class="dialogue assistant">Todo lo que hicimos hoy, jugar al semáforo y la cadena de reacciones, fue un entrenamiento para que entiendan perfectamente cómo usar estos bloques mágicos. En nuestra próxima misión, ¡usaremos este poder para darle a Tobi la habilidad de tomar sus propias decisiones! ¡Prepárense, porque su viaje como programadores de IA está a punto de volverse aún más emocionante!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
